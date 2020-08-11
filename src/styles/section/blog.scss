@@ -26,3 +26,11 @@
         }
     }
 }
+
+@media screen and (max-width: 401px) {
+    .blog {
+        .post {
+            width: auto;
+        }
+    }
+}

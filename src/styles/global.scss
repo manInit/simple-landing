@@ -22,6 +22,10 @@ $gradient: linear-gradient(0deg, rgba(252,227,138,0.6) 0%, rgba(243,129,129,1) 1
     font-size: 14px;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 .wrapper {
     max-width: 1200px; 
     margin: 0 auto;

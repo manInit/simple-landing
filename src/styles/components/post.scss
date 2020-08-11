@@ -1,6 +1,5 @@
 .post {
     margin: 0 auto;
-    
     &__preview {
         position: relative;
     }
@@ -54,6 +53,10 @@
     &__stats {
         display: flex;
         align-items: center;
+    }
+
+    &__img {
+        max-width: 100%;
     }
 }
 

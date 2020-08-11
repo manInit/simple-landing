@@ -57,6 +57,7 @@
     }
 
     &__btn {
+        padding-bottom: 30px;
         button {
             transition: all 0.3s ease-out;
             background: none;
@@ -109,6 +110,20 @@
             &__item {
                 box-sizing: border-box;
                 padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .main {
+        .menu__item:last-child {
+            padding-left: 0;
+            padding-right: 0;
+            flex-basis: 12%;
+
+            .menu__link {
+                padding: 0;
             }
         }
     }

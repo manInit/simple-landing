@@ -1,0 +1,58 @@
+$KSfont: 'Kaushan Script', cursive;
+$roboto: 'Roboto', sans-serif;
+$mainColor: #999;
+$secondColor: #fff;
+$gradient: linear-gradient(0deg, rgba(252,227,138,0.6) 0%, rgba(243,129,129,1) 100%);
+
+@mixin after_line($bottom, $left) {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+    width: 60px;
+    margin-left: -30px;
+    height: 3px;
+    background: #f38181;
+}
+
+* {
+    color: $mainColor;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+.wrapper {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-hr {
+    border: 1px solid #e5e5e5;
+    margin: 20px 0;
+}
+
+.logo {
+    &__txt {
+        font-size: 30px;
+        font-weight: bold;
+        color: $secondColor;
+    }
+}
+
+.paragraph {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: $roboto;
+    line-height: 1.7;
+    width: 85%;
+    min-height: 135px;
+}
+
+@media screen and (max-width: 810px) {
+    .paragraph {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,42 @@
+.unique {
+    background: url('img/bg__unique.png') no-repeat center top;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+
+    &__img {
+        display: inline-block;
+        position: relative;
+
+        &-abs {
+            position: absolute;
+            bottom: -90px;
+            right: -147px;
+        }
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .unique {
+        &__img {
+            &-abs {
+                bottom: -90px;
+                right: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .unique {
+        &__img {
+            &-main {
+                max-width: 100%;
+            }
+            
+            &-abs {
+                max-width: 60%;
+            }
+        }
+    }
+}

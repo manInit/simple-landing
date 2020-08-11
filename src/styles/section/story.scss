@@ -1,0 +1,25 @@
+.story {
+    padding-bottom: 110px;
+
+    .hover-elem a {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        opacity: 1;
+        transition: opacity 0.3s ease-out;
+        
+        &:hover {
+            opacity: 0.8; 
+        }
+    }
+
+    .hover-txt {
+        margin-top: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: $secondColor;
+    }
+}

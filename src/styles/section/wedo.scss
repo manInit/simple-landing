@@ -1,0 +1,16 @@
+.wedo {
+    padding-bottom: 80px;
+    
+    &__accordion {
+        margin-bottom: 190px;
+    }
+}
+
+@media screen and (max-width: 680px) { 
+    .wedo {
+        padding-bottom: 0;
+        &__accordion {
+            margin-bottom: 50px;
+        }
+    }
+}

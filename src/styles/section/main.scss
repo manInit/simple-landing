@@ -1,0 +1,115 @@
+.main {
+    color: $secondColor;
+
+    background: url('img/bg_main_clear.png') no-repeat center top;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+        
+    }
+
+    &__bg {
+        min-height: 100vh;
+        width: 100%;
+        background: $gradient;
+    }
+
+    &__header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+    }
+
+    &__offer {
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+
+        h1 {
+            color: $secondColor;
+            font-weight: bold;
+            font-size: 150px;
+            text-transform: uppercase;
+        }
+
+        h1:after {
+            content: '';
+            display: block;
+            margin: 73px auto 0 auto;
+            width: 60px;
+            height: 3px;
+            background: #fff;
+        }
+
+        h2 {
+            color: $secondColor;
+            font-family: 'Kaushan Script', cursive;
+            font-size: 72px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__btn {
+        button {
+            transition: all 0.3s ease-out;
+            background: none;
+            border: 3px solid #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 12px 28px;
+            margin-top: 50px;
+            box-sizing: border-box;
+            cursor: pointer;
+            color: $secondColor;
+
+            &:hover {
+                text-shadow: 1px 1px 2px #555;
+                border-color: #ddd;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .main {
+        h1 {
+            font-size: 14vmin;
+        }
+
+        h2 {
+            font-size: 6vmin;
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .main {
+        &__header {
+            .logo {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        .menu {
+            &__list {
+                flex-wrap: wrap;
+            }
+            &__item {
+                box-sizing: border-box;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

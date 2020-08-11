@@ -1,0 +1,22 @@
+.titlebox {
+    text-align: center;
+    padding: 90px 0;
+
+    &__ex {
+        color: #333333;
+        font-family: $KSfont;
+        font-size: 24px;
+        margin-bottom: 17px;
+    }
+
+    &__main {
+        position: relative;
+        font-weight: bold;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #333333;
+        &::after {
+            @include after_line(-40px, 50%);
+        }
+    }
+}

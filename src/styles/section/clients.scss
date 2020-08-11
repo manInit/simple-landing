@@ -1,0 +1,59 @@
+.clients {
+    background: url('img/bg_clients.png') no-repeat center top;
+    background-size: cover;
+    padding-bottom: 55px;
+    
+    &__list {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex-basis: 47%;
+    }
+
+    .client {
+        display: flex;
+        margin-bottom: 65px;
+        &__picture {
+            margin-right: 25px;
+        }
+
+        &__name {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        &__desc {
+            font-family: $roboto;
+            font-weight: lighter;
+            font-style: italic;
+            font-size: 15px;
+        }
+
+        &__info {
+            position: relative;
+            margin-bottom: 45px;
+            &::after {
+                @include after_line(-20px, 30px)
+            } 
+        }
+
+        &__txt {
+            line-height: 1.7;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .clients {
+        &__item {
+            flex-basis: 100%;
+        }
+    }
+}

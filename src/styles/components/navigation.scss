@@ -1,0 +1,44 @@
+.navigation {
+    padding: 30px 0;
+
+    &__list {
+        display: flex;
+        width: 100%;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    &__item {
+        color: $secondColor;
+        opacity: 0.6;
+        flex-grow: 1;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -23px;
+            width: 90%;
+            height: 3px;
+            background: #fff;
+        }
+
+        &-active {
+            opacity: 1;
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -23px;
+                width: 25%;
+                height: 3px;
+                background: #f38181ed;
+            }
+        }
+    }
+    
+    &__number {
+        color: $secondColor;
+        font-weight: bold;
+        font-size: 24px;
+    }
+}

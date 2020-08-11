@@ -1,0 +1,11 @@
+.portfolio {
+    margin-bottom: 130px;
+
+    &__slider {
+        margin-top: 100px;
+        
+        .slide__content {
+            flex-basis: 75%;
+        }
+    }
+}

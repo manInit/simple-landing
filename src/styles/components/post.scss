@@ -1,0 +1,80 @@
+.post {
+    margin: 0 auto;
+    
+    &__preview {
+        position: relative;
+    }
+
+    &__info {
+        margin-top: 15px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    &__txt {
+        font-family: $roboto;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    &__data {
+        position: absolute;
+        bottom: 10px;
+        left: -10px;
+        width: 60px;
+        height: 70px;
+        padding: 15px 0;
+        box-sizing: border-box;
+        background: #95e1d3;
+        text-align: center;
+
+        & > * {
+            display: block;
+        }
+    }
+
+    &__months {
+        font-family: $roboto;
+        font-style: italic;
+        color: $secondColor;
+        font-weight: lighter;
+        font-size: 15px;
+    }
+
+    &__days {
+        font-weight: bold;
+        font-size: 30px;
+        color: $secondColor;
+    }
+
+    &__stats {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    
+    &:not(:first-child) {
+        margin-left: 17px;
+    }
+    
+    &__icon {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    &__count {
+        display: inline-block;
+        font-family: $roboto;
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 15px;
+    }
+}

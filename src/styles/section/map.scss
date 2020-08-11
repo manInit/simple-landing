@@ -1,0 +1,19 @@
+.map {
+    background: url('img/bg_map.png') no-repeat center top;
+    background-size: cover;
+    text-align: center;
+    padding: 50px;
+    
+    &__title {
+        padding: 20px 0;
+        text-transform: uppercase;
+        color: #f38181;
+        font-size: 24px;
+        font-weight: bold;
+        position: relative;
+
+        &::after {
+            @include after_line(0, 50%);
+        }
+    }
+}

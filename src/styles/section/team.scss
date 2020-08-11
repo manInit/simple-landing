@@ -1,0 +1,46 @@
+.team {
+    padding-bottom: 80px;
+    
+    &__gallery {
+        margin-bottom: 165px;
+
+        .social-icon {
+            cursor: pointer;
+            width: 55px;
+            height: 55px;
+            
+            
+            &:not(:last-child) {
+                border-right: 1px solid #f9bd87;
+            }
+    
+            a {
+                transition: all 0.3s ease-out;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                background: #fce38a;
+    
+                &:hover {
+                    background: #f38181;
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .team {
+        padding-bottom: 0;
+        &__gallery {
+            margin-bottom: 90px;
+        }
+        &__gallery .gallery__item:not(:last-child) {
+                margin-bottom: 40px;
+        }
+        
+    }
+}
